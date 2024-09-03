@@ -18,7 +18,7 @@ const Cart = () => {
     <div>
       <ul>
         {newCart.map((item) => (
-          <CartCard item={item} removeFromCart={removeFromCart} />
+          <CartCard item={item} removeFromCart={removeFromCart} key={item.id} />
         ))}
       </ul>
       <p className="mb-3 font-normal">

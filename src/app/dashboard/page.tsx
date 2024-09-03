@@ -75,7 +75,7 @@ const Menu = () => {
   return (
     <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4">
       {data?.map((pizza) => (
-        <Card data={pizza} />
+        <Card data={pizza} key={pizza.id} />
       ))}
     </div>
   );
