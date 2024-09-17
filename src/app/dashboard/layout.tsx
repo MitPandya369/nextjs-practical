@@ -1,14 +1,14 @@
 export default function DashboardLayout({
   children,
-  cart
+  cart,
 }: Readonly<{
   children: React.ReactNode;
   cart: React.ReactNode;
 }>) {
   return (
-    <div className="just grid grid-cols-1 gap-5 md:grid-cols-4">
+    <div className="grid grid-cols-1 place-items-center gap-5 md:grid-cols-4">
       <div className="col-span-3">{children}</div>
-      {cart}
+      <div className="place-self-start">{cart}</div>
     </div>
   );
 }
